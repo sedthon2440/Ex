@@ -2,15 +2,15 @@
 #▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯  T.me/ZThon   ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 #▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯ T.me/Zelzal_Music ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 
-from ZelzalMusic.plugins.play.filters import command
+from DAXXMUSIC.plugins.play.filters import command
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ZelzalMusic import YouTube, app
-from ZelzalMusic.core.call import Zelzaly
-from ZelzalMusic.misc import db
-from ZelzalMusic.utils import AdminRightsCheck, seconds_to_min
-from ZelzalMusic.utils.inline import close_markup
+from DAXXMUSIC import YouTube, app
+from DAXXMUSIC.core.call import Zelzaly
+from DAXXMUSIC.misc import db
+from DAXXMUSIC.utils import AdminRightsCheck, seconds_to_min
+from DAXXMUSIC.utils.inline import close_markup
 from config import BANNED_USERS
 
 
