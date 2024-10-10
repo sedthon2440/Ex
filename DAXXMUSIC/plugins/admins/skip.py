@@ -2,19 +2,19 @@
 #▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯  T.me/ZThon   ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 #▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯ T.me/Zelzal_Music ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 
-from ZelzalMusic.plugins.play.filters import command
+from DAXXMUSIC.plugins.play.filters import command
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from ZelzalMusic import YouTube, app, YTB
-from ZelzalMusic.core.call import Zelzaly
-from ZelzalMusic.misc import db
-from ZelzalMusic.utils.database import get_loop
-from ZelzalMusic.utils.decorators import AdminRightsCheck
-from ZelzalMusic.utils.inline import close_markup, stream_markup
-from ZelzalMusic.utils.stream.autoclear import auto_clean
-from ZelzalMusic.utils.thumbnails import get_thumb
+from DAXXMUSIC import YouTube, app, YTB
+from DAXXMUSIC.core.call import Zelzaly
+from DAXXMUSIC.misc import db
+from DAXXMUSIC.utils.database import get_loop
+from DAXXMUSIC.utils.decorators import AdminRightsCheck
+from DAXXMUSIC.utils.inline import close_markup, stream_markup
+from DAXXMUSIC.utils.stream.autoclear import auto_clean
+from DAXXMUSIC.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 
