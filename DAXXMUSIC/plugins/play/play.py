@@ -5,20 +5,20 @@
 import random
 import string
 
-from ZelzalMusic.plugins.play.filters import command
+from DAXXMUSIC.plugins.play.filters import command
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from ZelzalMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from ZelzalMusic.core.call import Zelzaly
-from ZelzalMusic.utils import seconds_to_min, time_to_seconds
-from ZelzalMusic.utils.channelplay import get_channeplayCB
-from ZelzalMusic.utils.decorators.language import languageCB
-from ZelzalMusic.utils.decorators.play import PlayWrapper
-from ZelzalMusic.utils.formatters import formats
-from ZelzalMusic.utils.inline import (
+from DAXXMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from DAXXMUSIC.core.call import Zelzaly
+from DAXXMUSIC.utils import seconds_to_min, time_to_seconds
+from DAXXMUSIC.utils.channelplay import get_channeplayCB
+from DAXXMUSIC.utils.decorators.language import languageCB
+from DAXXMUSIC.utils.decorators.play import PlayWrapper
+from DAXXMUSIC.utils.formatters import formats
+from DAXXMUSIC.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
