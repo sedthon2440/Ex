@@ -5,17 +5,17 @@
 import asyncio
 import time
 
-from ZelzalMusic.plugins.play.filters import command
+from DAXXMUSIC.plugins.play.filters import command
 from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import CallbackQuery, Message
 
-from ZelzalMusic import app
-from ZelzalMusic.core.call import Zelzaly
-from ZelzalMusic.misc import db
-from ZelzalMusic.utils.database import get_assistant, get_authuser_names, get_cmode
-from ZelzalMusic.utils.decorators import ActualAdminCB, AdminActual, language
-from ZelzalMusic.utils.formatters import alpha_to_int, get_readable_time
+from DAXXMUSIC import app
+from DAXXMUSIC.core.call import Zelzaly
+from DAXXMUSIC.misc import db
+from DAXXMUSIC.utils.database import get_assistant, get_authuser_names, get_cmode
+from DAXXMUSIC.utils.decorators import ActualAdminCB, AdminActual, language
+from DAXXMUSIC.utils.formatters import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 
 rel = {}
