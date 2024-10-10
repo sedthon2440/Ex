@@ -68,7 +68,7 @@ async def get_thumb(videoid):
         youtube = Image.open(f"cache/thumb{videoid}.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
-        
+
         # Check if the 'filter' attribute is available in the Image module
         if hasattr(Image, 'filter'):
             background = image2.filter(filter=ImageFilter.BoxBlur(50))
@@ -79,7 +79,7 @@ async def get_thumb(videoid):
             background = image2.filter(ImageFilter.BoxBlur(50))
             enhancer = ImageEnhance.Brightness(background)
             background = enhancer.enhance(0.9)
-        
+
         Xcenter = youtube.width / 2
         Ycenter = youtube.height / 2
         x1 = Xcenter - 250
@@ -91,7 +91,7 @@ async def get_thumb(videoid):
         logo = ImageOps.expand(logo, border=17, fill="pink")
         background.paste(logo, (50, 100))
         draw = ImageDraw.Draw(background)
-        
+
         # Adjust the font size here
         font_size = 40
         font = ImageFont.truetype("DAXXMUSIC/assets/font2.ttf", font_size)
@@ -99,7 +99,7 @@ async def get_thumb(videoid):
         font2 = ImageFont.truetype("DAXXMUSIC/assets/font2.ttf", font2_size)
         arial = ImageFont.truetype("DAXXMUSIC/assets/font2.ttf", 30)
         name_font = ImageFont.truetype("DAXXMUSIC/assets/font.ttf", 40)
-        
+
         para = textwrap.wrap(clear(title), width=32) 
         j = 0
         draw.text(
@@ -118,7 +118,7 @@ async def get_thumb(videoid):
                 j += 1
                 draw.text(
                     (600, 390),
-                    f"T瑟岽浭熱磭 : {line}",
+                    f"Tɪᴛʟᴇ : {line}",
                     fill="white",
                     stroke_width=1,
                     stroke_fill="white",
