@@ -2,14 +2,14 @@
 #▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯  T.me/ZThon   ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 #▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯ T.me/Zelzal_Music ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 
-from ZelzalMusic.plugins.play.filters import command
+from DAXXMUSIC.plugins.play.filters import command
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from ZelzalMusic import app
-from ZelzalMusic.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from ZelzalMusic.utils.decorators import language
-from ZelzalMusic.utils.inline.settings import playmode_users_markup
+from DAXXMUSIC import app
+from DAXXMUSIC.utils.database import get_playmode, get_playtype, is_nonadmin_chat
+from DAXXMUSIC.utils.decorators import language
+from DAXXMUSIC.utils.inline.settings import playmode_users_markup
 from config import BANNED_USERS
 
 
