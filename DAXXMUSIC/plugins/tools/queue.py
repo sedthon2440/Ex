@@ -11,12 +11,12 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 
 import config
-from ZelzalMusic import app
-from ZelzalMusic.misc import db
-from ZelzalMusic.utils import ZelzalyBin, get_channeplayCB, seconds_to_min
-from ZelzalMusic.utils.database import get_cmode, is_active_chat, is_music_playing
-from ZelzalMusic.utils.decorators.language import language, languageCB
-from ZelzalMusic.utils.inline import queue_back_markup, queue_markup
+from DAXXMUSIC import app
+from DAXXMUSIC.misc import db
+from DAXXMUSIC.utils import ZelzalyBin, get_channeplayCB, seconds_to_min
+from DAXXMUSIC.utils.database import get_cmode, is_active_chat, is_music_playing
+from DAXXMUSIC.utils.decorators.language import language, languageCB
+from DAXXMUSIC.utils.inline import queue_back_markup, queue_markup
 from config import BANNED_USERS
 
 basic = {}
