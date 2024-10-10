@@ -4,15 +4,15 @@
 
 from datetime import datetime
 
-from ZelzalMusic.plugins.play.filters import command
+from DAXXMUSIC.plugins.play.filters import command
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ZelzalMusic import app
-from ZelzalMusic.core.call import Zelzaly
-from ZelzalMusic.utils import bot_sys_stats
-from ZelzalMusic.utils.decorators.language import language
-from ZelzalMusic.utils.inline import supp_markup
+from DAXXMUSIC import app
+from DAXXMUSIC.core.call import Zelzaly
+from DAXXMUSIC.utils import bot_sys_stats
+from DAXXMUSIC.utils.decorators.language import language
+from DAXXMUSIC.utils.inline import supp_markup
 from config import BANNED_USERS, PING_IMG_URL
 
 
