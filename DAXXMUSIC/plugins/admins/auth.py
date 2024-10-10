@@ -14,12 +14,12 @@ from DAXXMUSIC.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
-@app.on_message(filters.command("auth") & filters.group & ~BANNED_USERS)
+@app.on_message(command("رفع ادمن") & filters.group & ~BANNED_USERS)
 @AdminActual
 async def auth(client, message: Message, _):
     if not message.reply_to_message:
-        if len(message.command) != 2:
-            return await message.reply_text(_["general_1"])
+        if "رفع ادمن" not in message.text.split():
+            return
     user = await extract_user(message)
     token = await int_to_alpha(user.id)
     _check = await get_authuser_names(message.chat.id)
@@ -43,12 +43,12 @@ async def auth(client, message: Message, _):
         return await message.reply_text(_["auth_3"].format(user.mention))
 
 
-@app.on_message(filters.command("unauth") & filters.group & ~BANNED_USERS)
+@app.on_message(command("تنزيل ادمن") & filters.group & ~BANNED_USERS)
 @AdminActual
 async def unauthusers(client, message: Message, _):
     if not message.reply_to_message:
-        if len(message.command) != 2:
-            return await message.reply_text(_["general_1"])
+        if "تنزيل ادمن" not in message.text.split():
+            return
     user = await extract_user(message)
     token = await int_to_alpha(user.id)
     deleted = await delete_authuser(message.chat.id, token)
@@ -63,10 +63,12 @@ async def unauthusers(client, message: Message, _):
 
 
 @app.on_message(
-    filters.command(["authlist", "authusers"]) & filters.group & ~BANNED_USERS
+    command(["الادمنية", "الادمنيه"]) & filters.group & ~BANNED_USERS
 )
 @language
 async def authusers(client, message: Message, _):
+    if "الادمنيه" not in message.text.split() or "الادمنية" not in message.text.split():
+        return
     _wtf = await get_authuser_names(message.chat.id)
     if not _wtf:
         return await message.reply_text(_["setting_4"])
@@ -87,4 +89,3 @@ async def authusers(client, message: Message, _):
             text += f"{j}➤ {user}[<code>{user_id}</code>]\n"
             text += f"   {_['auth_8']} {admin_name}[<code>{admin_id}</code>]\n\n"
         await mystic.edit_text(text, reply_markup=close_markup(_))
-    
