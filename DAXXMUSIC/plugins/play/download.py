@@ -15,8 +15,8 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import Message, InputTextMessageContent, InlineKeyboardButton, InlineKeyboardMarkup
 from youtube_search import YoutubeSearch
 
-from ZelzalMusic import app
-from ZelzalMusic.plugins.play.filters import command
+from DAXXMUSIC import app
+from DAXXMUSIC.plugins.play.filters import command
 from config import CH_US
 
 def remove_if_exists(path):
