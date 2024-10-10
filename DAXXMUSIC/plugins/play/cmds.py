@@ -10,7 +10,7 @@ from pyrogram import Client, filters, emoji
 from strings.filters import command
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
 from pyrogram.errors import MessageNotModified
-from ZelzalMusic import app
+from DAXXMUSIC import app
 from config import OWNER_ID, LOGGER_ID
 
 
@@ -22,7 +22,7 @@ async def zdatsr(client: Client, message: Message):
     name = usr.first_name
     usrnam = usr.username
     await message.reply_photo(
-        photo=f"https://graph.org/file/1df1d4ee78c1dce31f4fe.jpg",
+        photo=f"https://telegra.ph/file/4d303296e4fac9a40ea07.jpg",
         caption=f"""<b>» مرحبـاً بك عـزيـزي </b> {message.from_user.mention} .\n\n<b>» استخـدم الازرار بالاسفـل 𝄞\n» لـ تصفـح اوامـر الميـوزك 🥁</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
