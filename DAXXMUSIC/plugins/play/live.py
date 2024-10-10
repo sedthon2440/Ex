@@ -4,10 +4,10 @@
 
 from pyrogram import filters
 
-from ZelzalMusic import YouTube, app
-from ZelzalMusic.utils.channelplay import get_channeplayCB
-from ZelzalMusic.utils.decorators.language import languageCB
-from ZelzalMusic.utils.stream.stream import stream
+from DAXXMUSIC import YouTube, app
+from DAXXMUSIC.utils.channelplay import get_channeplayCB
+from DAXXMUSIC.utils.decorators.language import languageCB
+from DAXXMUSIC.utils.stream.stream import stream
 from config import BANNED_USERS
 
 
