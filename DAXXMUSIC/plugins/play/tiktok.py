@@ -9,8 +9,8 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, CallbackQuery
 from pyrogram.types import InlineKeyboardMarkup as Markup, InlineKeyboardButton as Button
 
-from ZelzalMusic import app
-from ZelzalMusic.plugins.play.filters import command
+from DAXXMUSIC import app
+from DAXXMUSIC.plugins.play.filters import command
 
 headers = {
     'Accept-language': 'en',
