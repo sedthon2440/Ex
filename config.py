@@ -9,16 +9,16 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "9671629"))
+API_HASH = getenv("API_HASH", "be5c84e9dc1ca0e2b53d54b71e575124")
 
-EVAL = list(map(int, getenv("EVAL", "5016109398").split()))
+EVAL = list(map(int, getenv("EVAL", "7291869416").split()))
 # ------------------------------------------------------
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("7632141884:AAHvcEtis4_yca_zFEXCNGn9__i1Tk54wx4")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","Ownergit")
+OWNER_USERNAME = getenv("OWNER_USERNAME","BDB0B")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "NexikoBot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "Oscbbot")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME" , "SOMUXD")
 # ---------------------------------------------------------
@@ -28,7 +28,7 @@ ASSUSERNAME = getenv("ASSUSERNAME" , "MissYumikoo")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Anubarlo:Anubarlo@cluster0.ioiefbq.mongodb.net/?retryWrites=true&w=majority")
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 
@@ -37,10 +37,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", -1002237336934))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002059513294))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", 5016109398))
+OWNER_ID = int(getenv("OWNER_ID", 7291869416))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
@@ -69,8 +69,8 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/somueditingzone")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/somueditingzone")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/O_P_G")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/QU_QUU")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
@@ -116,7 +116,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # ------------------------------------
 # ------------------------------------
 # ------------------------------------
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BAGi8fAAKi11JuYBCZ3d0o_evYzCihyZA-Xi-nVA3hh3UyK1keI8FG2qS5t8ysryBVTkHewmqz1UYghYUuBCA2VTkU7VHBq2x8kx3B83aT6RYSctw4-gkRGNoKgAU3SVDHGI_I7GTNgREgnHM4DJsxuGnlag998q_MNCv6OxV_GawDWK8eRTxhFl884dA5-Fjetjr8wj0e0oHa4YAq6GzkQjCLUy4ONcOub10Y6nVfHuu4ZUGyFQ67g74y8LWKqwlHW9MrrJkhkRYZx4NvxGx60h_zt6K9GxyeYCCMx-JQQfHTmMTVbORBvoY0m7Skmt9X7CWIXilD2-aOzJtQuEDqcZn0CIWAAAAAEvAALVAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -143,17 +143,17 @@ confirmer = {}
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/462ea653de0a313f8302a.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/4d303296e4fac9a40ea07.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/462ea653de0a313f8302a.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/4d303296e4fac9a40ea07.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org/file/462ea653de0a313f8302a.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/29e59164e2c660786ac34.jpg"
+PLAYLIST_IMG_URL = "https://telegra.ph/file/4d303296e4fac9a40ea07.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/4d303296e4fac9a40ea07.jpg"
 TELEGRAM_AUDIO_URL = "https://graph.org/file/462ea653de0a313f8302a.jpg"
 TELEGRAM_VIDEO_URL = "https://graph.org/file/462ea653de0a313f8302a.jpg"
 STREAM_IMG_URL = "https://graph.org/file/462ea653de0a313f8302a.jpg"
-SOUNCLOUD_IMG_URL = "https://graph.org/file/462ea653de0a313f8302a.jpg"
+SOUNCLOUD_IMG_URL = "https://telegra.ph/file/4d303296e4fac9a40ea07.jpg"
 YOUTUBE_IMG_URL = "https://envs.sh/IER.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/d723f4c80da157fca1678.jpg"
 SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/6c741a6bc1e1663ac96fc.jpg"
