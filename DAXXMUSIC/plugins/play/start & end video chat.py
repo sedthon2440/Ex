@@ -4,7 +4,7 @@
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from ZelzalMusic import app
+from DAXXMUSIC import app
 # vc on
 @app.on_message(filters.video_chat_started)
 async def zed(_, msg):
