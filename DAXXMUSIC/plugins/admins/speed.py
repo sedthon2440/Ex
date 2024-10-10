@@ -5,13 +5,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ZelzalMusic import app
-from ZelzalMusic.core.call import Zelzaly
-from ZelzalMusic.misc import SUDOERS, db
-from ZelzalMusic.utils import AdminRightsCheck
-from ZelzalMusic.utils.database import is_active_chat, is_nonadmin_chat
-from ZelzalMusic.utils.decorators.language import languageCB
-from ZelzalMusic.utils.inline import close_markup, speed_markup
+from DAXXMUSIC import app
+from DAXXMUSIC.core.call import Zelzaly
+from DAXXMUSIC.misc import SUDOERS, db
+from DAXXMUSIC.utils import AdminRightsCheck
+from DAXXMUSIC.utils.database import is_active_chat, is_nonadmin_chat
+from DAXXMUSIC.utils.decorators.language import languageCB
+from DAXXMUSIC.utils.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
